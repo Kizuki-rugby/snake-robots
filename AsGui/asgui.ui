@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AsGui</class>
+ <widget class="QMainWindow" name="AsGui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AsGui</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>150</y>
+      <width>241</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="wormButton">
+       <property name="text">
+        <string>Play Worm</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="robotButton">
+       <property name="text">
+        <string>Play Robot</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="display_Player">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>100</y>
+      <width>571</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menuFiles">
+    <property name="title">
+     <string>Files</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuStatistics">
+    <property name="title">
+     <string>Statistics</string>
+    </property>
+    <addaction name="actionTop_3_Games"/>
+    <addaction name="actionTop_3_Players"/>
+    <addaction name="actionCalculated_Statistics"/>
+   </widget>
+   <widget class="QMenu" name="menuPlayers">
+    <property name="title">
+     <string>Players</string>
+    </property>
+    <addaction name="actionNew_Player"/>
+    <addaction name="separator"/>
+    <addaction name="actionSelect_Existing_Player"/>
+   </widget>
+   <addaction name="menuFiles"/>
+   <addaction name="menuStatistics"/>
+   <addaction name="menuPlayers"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionTop_3_Games">
+   <property name="text">
+    <string>Top 3 Games</string>
+   </property>
+  </action>
+  <action name="actionTop_3_Players">
+   <property name="text">
+    <string>Top 3 Players</string>
+   </property>
+  </action>
+  <action name="actionCalculated_Statistics">
+   <property name="text">
+    <string>Calculated Statistics </string>
+   </property>
+  </action>
+  <action name="actionNew_Player">
+   <property name="text">
+    <string>New Player</string>
+   </property>
+  </action>
+  <action name="actionSelect_Existing_Player">
+   <property name="text">
+    <string>Select Existing Player</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset theme="edit-undo">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::QuitRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
